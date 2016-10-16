@@ -1,0 +1,228 @@
+body{
+	font:14px "Microsoft Yahei";
+	color:#000;
+	background:url('../images/bg.jpg') repeat;
+}
+
+/**************************分割线*************************/
+/* 开始 公共页头 */
+#header{
+	padding-top:110px;
+	min-width: 1050px;
+	height:154px;
+	transition:background 3s ease-in-out;
+	-moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+#header.bgA{
+	-webkit-transition:background 2s ease-in-out;
+	-moz-transition:background 2s ease-in-out;
+	-o-transition:background 2s ease-in-out;
+	transition:background 2s ease-in-out;
+	background: url('../images/banner0.png') no-repeat top center;
+}
+#header.bgB{
+	-webkit-transition:background 2s ease-in-out;
+	-moz-transition:background 2s ease-in-out;
+	-o-transition:background 2s ease-in-out;
+	transition:background 2s ease-in-out;
+	background: url('../images/banner1.png') no-repeat top center;
+}
+#header ul.nav{
+	position: relative;
+	margin:0 auto;
+	padding-left:10px;
+	width:1040px;
+	height: 40px;
+	font-size:17px;
+	letter-spacing:2px;
+	background: #fff;
+	list-style:none;
+}
+#header ul.nav li{
+	float:left;
+	padding-bottom:3px;
+	text-align:center;
+	border-bottom:5px solid #E1E4E1;
+}
+#header ul.nav li:hover,
+#header ul.nav li.active{
+	border-bottom:5px solid #1B7819;
+}/*当前栏目添加绿色的低部边框*/
+#header ul.nav li a{
+	display:block;
+	margin-top:10px;
+	padding:0 28px;
+	height:19px;
+	line-height:18px;
+	border-right:1px solid #7a7a7a;
+	color:#7a7a7a;
+}
+#header ul.nav li.last a{
+	padding-left:30px;
+	border:none;
+}
+
+/* 结束 公共页头 */
+/**************************分割线*************************/
+/*开始 首页主体部分*/
+#indexmain{
+	position: relative;
+	margin:0 auto;
+	padding:7px 3px 4px;
+	width:1044px;
+	background-color: #fff;
+	overflow:hidden;
+}
+#indexmain a:hover,#footer a:hover{text-decoration:underline;}
+
+#indexmain div.con{
+	float:left;
+	width:100%;
+	overflow: hidden;
+}
+#indexmain div.con div.indexBox{
+	float:left;
+	margin-right:8px;
+	margin-bottom:8px;
+	padding:2px;
+	width:336px;
+	height:239px;
+	color:#000;
+	border:1px solid #E6E6E6;
+	overflow:hidden;
+}
+#indexmain div.con>div.lastBox{margin-right:0;}
+#indexmain div.topCon div.indexBox{height:217px;}
+#indexmain div.centerCon div.indexBox{height:239px;}
+#indexmain div.bottomCon div.indexBox{height:264px;}/*首页框架布局 结束*/
+
+#indexmain div.topCon div#indexSlide {
+	margin-right:0;
+	width:686px;
+	overflow:hidden;
+}
+#indexmain div#indexSlide  ul li{
+	float:left;
+	list-style:none;
+}
+#indexmain div#indexSlide  ul li a{
+	display:block;
+	text-decoration:none;
+}
+#indexmain div#indexSlide  ul li a img{
+	width:100%;
+	height:217px;
+}/*首页幻灯片样式 结束*/
+
+#indexmain div.indexBox div.boxTitle{
+	padding:0 15px;
+	height:29px;
+	line-height:29px;
+	font-size:16px;
+	background-color:#EAE8E6;
+}
+#indexmain div.indexBox div.boxTitle h2{
+	display:inline-block;
+	float:left;
+	font-weight:normal;
+}
+#indexmain div.indexBox div.boxTitle a{
+	float:right;
+	color:#000;
+}/*首页版块标题样式 结束*/
+
+#indexmain div.loginBtn{
+	margin:0 auto;
+	width:250px;
+}
+#indexmain div.loginBtn button{
+	margin-top:25px;
+	width:248px;
+	height:50px;
+	border:1px solid #1B7819;
+	cursor:pointer;
+	letter-spacing:1px;
+	font:16px "Microsoft Yahei";
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 6% center;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	-ms-border-radius:8px;
+	border-radius:8px;
+}
+#indexmain div.loginBtn button span{margin-left:20px;}
+#indexmain div.loginBtn button:focus{outline:none;}
+#indexmain div.loginBtn button:hover{
+	color:#fff;
+	background-color: #1B7819;
+}
+#indexmain div.loginBtn button.teacherBtn{background-image: url('../images/teacher0.png');}
+#indexmain div.loginBtn button.studentBtn{background-image: url('../images/student0.png');}
+#indexmain div.loginBtn button.teacherBtn:hover{background-image: url('../images/teacher1.png');}
+#indexmain div.loginBtn button.studentBtn:hover{background-image: url('../images/student1.png');}
+/*登录按钮样式 结束*/
+
+#indexmain div.indexBox ul.alist{
+	padding:7px 20px;
+}
+#indexmain div.indexBox ul.alist li{
+	margin-top:6px;
+	font-size:14px;
+	list-style:none;
+}
+#indexmain div.indexBox ul.alist li a{
+	color:#000;
+}
+#indexmain div.indexBox ul.alist li span{
+	float:right;
+}/*首页新闻列表样式 结束*/
+/*结束 首页主体部分*/
+/**************************分割线*************************/
+/* 开始 公共页脚 */
+#footer{
+	margin:1px auto;
+	width:1044px;
+	padding:0 3px ;
+	font-family:"黑体";
+	background-color: #fff;
+
+}
+#footer ul#friendLinks{
+	width:100%;
+	height:23px;
+	line-height:23px;	
+	border:1px solid #1B7819;
+	list-style:none;
+}
+#footer ul#friendLinks li{
+	float:left;
+	font-size:13px;
+	padding:0 7px;
+}
+#footer ul#friendLinks li:nth-child(1){
+	margin-left:10px;
+}
+#footer ul#friendLinks li a{
+	display:block;
+	font-size:12px;
+	color:#666;
+}/*页脚友情链接版块样式 结束*/
+#footer p{
+	margin:0 auto;
+	padding:3px 0 7px;
+	width:1050px;
+	text-align:center;
+	font-size:12px ;
+	color:#666;
+}
+#footer p a{
+	color:#666;
+}/*页脚版权信息样式 结束*/
+/* 结束 公共页脚 */
+
